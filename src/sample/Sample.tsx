@@ -4,7 +4,8 @@ import LightSwitch from "./LightSwitch";
 import Gallery from "./Gallery";
 import Form1 from "./Form1";
 import Feedback1 from "./Feedback1";
-
+import Gree1 from "./Greet1";
+import "../pages/Home.css"
 
 
 export const Sample = () => {
@@ -34,6 +35,7 @@ export const Sample = () => {
         <Gallery></Gallery>
         <Form1></Form1>
         <Feedback1></Feedback1>
+        <Gree1></Gree1>
       </Masonry>
     </>
   )

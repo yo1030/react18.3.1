@@ -8,8 +8,10 @@ export const ColorSwitch: React.FC<ColorSwitchProps> = (
   props
 ) => {
   return (
-    <button onClick={props.onChangeColor}>
-      Change color
-    </button>
+    <div>
+      <button onClick={props.onChangeColor}>
+        Change color
+      </button>
+    </div>
   );
 }

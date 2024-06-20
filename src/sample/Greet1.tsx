@@ -1,4 +1,4 @@
-export default function FeedbackForm() {
+export default function Gree1() {
 
   function handleClick(): void {
     const userName = prompt('What is your name?')
@@ -8,8 +8,10 @@ export default function FeedbackForm() {
   }
 
   return (
-    <button onClick={handleClick}>
-      Greet
-    </button>
+    <div>
+      <button onClick={handleClick}>
+        Greet
+      </button>
+    </div>
   );
 }
