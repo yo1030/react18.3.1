@@ -1,5 +1,11 @@
+import Masonry from "react-masonry-css";
 import { ColorSwitch } from "./ColorSwitch";
 import LightSwitch from "./LightSwitch";
+import Gallery from "./Gallery";
+import Form1 from "./Form1";
+import Feedback1 from "./Feedback1";
+
+
 
 export const Sample = () => {
   let i = 0;
@@ -11,10 +17,24 @@ export const Sample = () => {
     event.currentTarget.style.backgroundColor = colors[i];
     i++;
   }
+  const breakpointColumnsObj = {
+    default: 4,
+    1350: 3,
+    1048: 2,
+    576: 1
+  }
   return (
     <>
-      <LightSwitch></LightSwitch>
-      <ColorSwitch onChangeColor={handleColorSwitchChange}></ColorSwitch>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className='my-masonry-grid'
+        columnClassName='my-masonry-grid_column'>
+        <LightSwitch></LightSwitch>
+        <ColorSwitch onChangeColor={handleColorSwitchChange}></ColorSwitch>
+        <Gallery></Gallery>
+        <Form1></Form1>
+        <Feedback1></Feedback1>
+      </Masonry>
     </>
   )
 }
