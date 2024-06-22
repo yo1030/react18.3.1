@@ -6,7 +6,8 @@ import Form1 from "./Form1";
 import Feedback1 from "./Feedback1";
 import Gree1 from "./Greet1";
 import "../pages/Home.css"
-
+import { TrafficLight } from "./TrafficLight";
+import { FourTestCase } from "./FourTestCase";
 
 export const Sample = () => {
   let i = 0;
@@ -36,6 +37,8 @@ export const Sample = () => {
         <Form1></Form1>
         <Feedback1></Feedback1>
         <Gree1></Gree1>
+        <TrafficLight></TrafficLight>
+        <FourTestCase></FourTestCase>
       </Masonry>
     </>
   )
