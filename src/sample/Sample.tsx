@@ -8,6 +8,7 @@ import Gree1 from "./Greet1";
 import "../pages/Home.css"
 import { TrafficLight } from "./TrafficLight";
 import { FourTestCase } from "./FourTestCase";
+import { ScoreBoard } from "./ScoreBoard";
 
 export const Sample = () => {
   let i = 0;
@@ -39,6 +40,7 @@ export const Sample = () => {
         <Gree1></Gree1>
         <TrafficLight></TrafficLight>
         <FourTestCase></FourTestCase>
+        <ScoreBoard></ScoreBoard>
       </Masonry>
     </>
   )
