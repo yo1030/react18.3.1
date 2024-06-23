@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { produce } from 'immer';
 import Background from './Background';
 import Box from './Box';
 
@@ -8,27 +9,23 @@ const initialPosition = {
   y: 0
 };
 
-export const Canvas1: React.FC = () => {
+export const CanvasImmer = () => {
   const [shape, setShape] = useState({
     color: 'orange',
     position: initialPosition
   });
 
   function handleMove(dx: number, dy: number) {
-    setShape({
-      ...shape,
-      position: {
-        x : shape.position.x + dx,
-        y : shape.position.y + dy
-      }
-    });
+    setShape(produce(draft => {
+      draft.position.x += dx;
+      draft.position.y += dy;
+    }))
   }
 
   function handleColorChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    setShape({
-      ...shape,
-      color: e.target.value
-    });
+    setShape(produce(draft => {
+      draft.color = e.target.value
+    }));
   }
 
   return (

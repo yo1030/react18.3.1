@@ -1,7 +1,7 @@
 // import React from 'react';
 // import logo from './logo.svg';
-import { Route, Routes } from "react-router-dom";
 // import { Router } from './Router';
+import { Route, Routes } from "react-router-dom";
 import './App.css';
 import { Home } from './pages/Home';
 import { NotFound } from "./pages/NotFound";

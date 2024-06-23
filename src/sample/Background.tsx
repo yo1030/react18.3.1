@@ -18,6 +18,7 @@ export default function Background({
       width: 250,
       height: 250,
       backgroundColor: 'rgba(200, 200, 0, 0.2)',
-    }} />
+    }}
+    z-index="1" />
   );
 };

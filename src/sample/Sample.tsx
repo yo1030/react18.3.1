@@ -10,6 +10,7 @@ import { TrafficLight } from "./TrafficLight";
 import { FourTestCase } from "./FourTestCase";
 import { ScoreBoard } from "./ScoreBoard";
 import { Canvas1 } from "./Canvas1";
+import { CanvasImmer } from "./CanvasImmer";
 
 export const Sample = () => {
   let i = 0;
@@ -43,6 +44,7 @@ export const Sample = () => {
         <FourTestCase></FourTestCase>
         <ScoreBoard></ScoreBoard>
         <Canvas1></Canvas1>
+        <CanvasImmer></CanvasImmer>
       </Masonry>
     </>
   )

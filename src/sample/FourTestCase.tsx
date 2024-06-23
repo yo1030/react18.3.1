@@ -7,7 +7,7 @@ increment.toString = () => 'n => n+1';
 
 export const FourTestCase: React.FC = () =>  {
   return (
-    <>
+    <div>
       <TestCase
         baseState={0}
         queue={[1, 1, 1]}
@@ -42,7 +42,7 @@ export const FourTestCase: React.FC = () =>  {
         ]}
         expected={42}
       />
-    </>
+    </div>
   );
 }
 

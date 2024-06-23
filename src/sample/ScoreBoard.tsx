@@ -30,7 +30,7 @@ export const ScoreBoard = () => {
   }
 
   return (
-    <>
+    <div>
       <label>
         Score: <b>{player.score}</b>
         {' '}
@@ -53,6 +53,6 @@ export const ScoreBoard = () => {
           onChange={handleLastNameChange}
         />
       </label>
-    </>
+    </div>
   );
 }
