@@ -14,7 +14,7 @@ const initialProducts = [{
   count: 2,
 }];
 
-export const ShoppingCart1 = () => {
+export const ShoppingCartAdd = () => {
   const [
     products,
     setProducts
