@@ -13,6 +13,7 @@ import { Canvas1 } from "./Canvas1";
 import { CanvasImmer } from "./CanvasImmer";
 import { ShoppingCartAdd } from "./ShoppingCartAdd";
 import { ShoppingCartDelete } from "./ShoppingCartDelete";
+import { TaskApp } from "./TaskApp";
 
 export const Sample = () => {
   let i = 0;
@@ -49,6 +50,7 @@ export const Sample = () => {
         <CanvasImmer></CanvasImmer>
         <ShoppingCartAdd></ShoppingCartAdd>
         <ShoppingCartDelete></ShoppingCartDelete>
+        <TaskApp></TaskApp>
       </Masonry>
     </>
   )

@@ -32,7 +32,7 @@ export const Canvas1: React.FC = () => {
   }
 
   return (
-    <>
+    <div className='canvas'>
       <select
         value={shape.color}
         onChange={handleColorChange}
@@ -51,6 +51,6 @@ export const Canvas1: React.FC = () => {
       >
         Drag me!
       </Box>
-    </>
+    </div>
   );
 }

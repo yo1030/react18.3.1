@@ -29,7 +29,7 @@ export const CanvasImmer = () => {
   }
 
   return (
-    <>
+    <div className='canvas'>
       <select
         value={shape.color}
         onChange={handleColorChange}
@@ -48,6 +48,6 @@ export const CanvasImmer = () => {
       >
         Drag me!
       </Box>
-    </>
+    </div>
   );
 }
