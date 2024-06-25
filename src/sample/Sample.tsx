@@ -11,6 +11,7 @@ import { FourTestCase } from "./FourTestCase";
 import { ScoreBoard } from "./ScoreBoard";
 import { Canvas1 } from "./Canvas1";
 import { CanvasImmer } from "./CanvasImmer";
+import { ShoppingCart1 } from "./ShoppingCart1";
 
 export const Sample = () => {
   let i = 0;
@@ -45,6 +46,7 @@ export const Sample = () => {
         <ScoreBoard></ScoreBoard>
         <Canvas1></Canvas1>
         <CanvasImmer></CanvasImmer>
+        <ShoppingCart1></ShoppingCart1>
       </Masonry>
     </>
   )
