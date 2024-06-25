@@ -20,7 +20,7 @@ const initialProducts = [{
   count: 2,
 }];
 
-export const ShoppingCartAdd: React.FC<React.DetailedHTMLProps<React.HTMLAttributes<HTMLUListElement>, HTMLUListElement>> = () => {
+export const ShoppingCartDelete: React.FC<React.DetailedHTMLProps<React.HTMLAttributes<HTMLUListElement>, HTMLUListElement>> = () => {
   const [
     products,
     setProducts
@@ -32,11 +32,26 @@ export const ShoppingCartAdd: React.FC<React.DetailedHTMLProps<React.HTMLAttribu
         return {
           ...product,
           count: product.count + 1
-        }
+        };
       } else {
-        return product
+        return product;
       }
     }))
+  }
+
+  function handleDecreaseClick(productId: number): void {
+    let nextProducts = products.map(product => {
+      if (product.id === productId) {
+        return {
+          ...product,
+          count: product.count - 1
+        };
+      } else {
+        return product;
+      }
+    });
+    nextProducts = nextProducts.filter(p => p.count > 0)
+    setProducts(nextProducts)
   }
 
   return (
@@ -50,6 +65,11 @@ export const ShoppingCartAdd: React.FC<React.DetailedHTMLProps<React.HTMLAttribu
             handleIncreaseClick(product.id);
           }}>
             +
+          </button>
+          <button onClick={() => {
+            handleDecreaseClick(product.id)
+          }}>
+            –
           </button>
         </li>
       ))}
