@@ -15,6 +15,9 @@ import { ShoppingCartAdd } from "./ShoppingCartAdd";
 import { ShoppingCartDelete } from "./ShoppingCartDelete";
 import { TaskApp } from "./TaskApp";
 import { TaskAppImmer } from "./TaskAppImmer";
+import { Picture } from "./Picture";
+import { EditProfile } from "./EditProfile";
+import { EditProfile1 } from "./EditProfile1";
 
 export const Sample = () => {
   let i = 0;
@@ -53,6 +56,9 @@ export const Sample = () => {
         <ShoppingCartDelete></ShoppingCartDelete>
         <TaskApp></TaskApp>
         <TaskAppImmer></TaskAppImmer>
+        <Picture></Picture>
+        <EditProfile></EditProfile>
+        <EditProfile1></EditProfile1>
       </Masonry>
     </>
   )
