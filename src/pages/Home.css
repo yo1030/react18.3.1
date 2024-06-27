@@ -24,3 +24,7 @@
   background-color: transparent;
   height: 300px;
 }
+
+.highlighted, .selected {
+  background: #d2eaff;
+}

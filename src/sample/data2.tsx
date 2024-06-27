@@ -1,10 +1,10 @@
-export interface LetterProps {
+export type lettersProps = {
   id: number,
   subject: string,
   isStarred: boolean
 }
 
-export const initialLetters: LetterProps[] = [{
+export const letters: lettersProps[] = [{
   id: 0,
   subject: 'Ready for adventure?',
   isStarred: true,

@@ -1,10 +1,14 @@
-// import { useState } from 'react';
+import React from "react";
 
-// export default function Clock(props) {
-//   const [color, setColor] = useState(props.color);
-//   return (
-//     <h1 style={{ color: color }}>
-//       {props.time}
-//     </h1>
-//   );
-// }
+interface propsType {
+  color: string,
+  time: Date
+}
+
+export const Clock: React.FC<propsType> = (props) => {
+  return (
+    <h1 style={{ color: props.color }}>
+      {props.time.toLocaleDateString()}
+    </h1>
+  );
+}
