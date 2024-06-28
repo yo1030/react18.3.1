@@ -1,29 +1,32 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 
-// export default function SyncedInputs() {
-//   return (
-//     <>
-//       <Input label="First input" />
-//       <Input label="Second input" />
-//     </>
-//   );
-// }
+export const SyncedInputs: React.FC<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>> = () => {
+  const [value, setValue] = useState<string>("")
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    setValue(e.target.value);
+  }
+  return (
+    <div>
+      <Input label="First input" value={value} onChange = {handleChange} />
+      <Input label="Second input" value={value} onChange = {handleChange} />
+    </div>
+  );
+}
 
-// function Input({ label }) {
-//   const [text, setText] = useState('');
-
-//   function handleChange(e) {
-//     setText(e.target.value);
-//   }
-
-//   return (
-//     <label>
-//       {label}
-//       {' '}
-//       <input
-//         value={text}
-//         onChange={handleChange}
-//       />
-//     </label>
-//   );
-// }
+interface labelProps {
+  label: string,
+  value: string,
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+}
+function Input({ label, value, onChange }: labelProps) {
+  return (
+    <label>
+      {label}
+      {' '}
+      <input
+        value={value}
+        onChange={onChange}
+      />
+    </label>
+  );
+}

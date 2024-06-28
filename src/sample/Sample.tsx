@@ -18,6 +18,12 @@ import { TaskAppImmer } from "./TaskAppImmer";
 import { Picture } from "./Picture";
 import { EditProfile } from "./EditProfile";
 import { EditProfile1 } from "./EditProfile1";
+import { Clock } from "./Clock";
+import { TravelPlan } from "./TravelPlan";
+import MailClient from "./MailClient1";
+import MailClient2 from "./MailClient2";
+import { SyncedInputs } from "./SyncedInputs";
+import { FilterableList } from "./FilterableList";
 
 export const Sample = () => {
   let i = 0;
@@ -59,6 +65,12 @@ export const Sample = () => {
         <Picture></Picture>
         <EditProfile></EditProfile>
         <EditProfile1></EditProfile1>
+        <Clock color="rgb(60, 180, 150)" time={new Date()}></Clock>
+        <TravelPlan></TravelPlan>
+        <MailClient></MailClient>
+        <MailClient2></MailClient2>
+        <SyncedInputs></SyncedInputs>
+        <FilterableList></FilterableList>
       </Masonry>
     </>
   )
