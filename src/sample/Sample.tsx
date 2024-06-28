@@ -24,6 +24,11 @@ import MailClient from "./MailClient1";
 import MailClient2 from "./MailClient2";
 import { SyncedInputs } from "./SyncedInputs";
 import { FilterableList } from "./FilterableList";
+import { InputText } from "./InputText";
+import { SwitchInput } from "./SwitchInput";
+import ContactManager from "./ContactManager";
+import { Gallery1 } from "./Gallery1";
+import { ContactList1 } from "./ContactList1";
 
 export const Sample = () => {
   let i = 0;
@@ -71,6 +76,11 @@ export const Sample = () => {
         <MailClient2></MailClient2>
         <SyncedInputs></SyncedInputs>
         <FilterableList></FilterableList>
+        <InputText></InputText>
+        <SwitchInput></SwitchInput>
+        <ContactManager></ContactManager>
+        <Gallery1></Gallery1>
+        <ContactList1></ContactList1>
       </Masonry>
     </>
   )

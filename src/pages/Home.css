@@ -28,3 +28,8 @@
 .highlighted, .selected {
   background: #d2eaff;
 }
+
+textarea {
+  display: block;
+  margin: 0 auto;
+}
