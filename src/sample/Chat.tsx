@@ -1,18 +1,28 @@
-// import { useState } from 'react';
+import React from 'react';
+import { ContactType } from './Messenger';
 
-// export default function Chat({contact, message, dispatch}) {
-//   return (
-//     <section className="chat">
-//       <textarea
-//         value={message}
-//         placeholder={'Chat to ' + contact.name}
-//         onChange={(e) => {
-//           // TODO: dispatch edited_message
-//           // (Read the input value from e.target.value)
-//         }}
-//       />
-//       <br />
-//       <button>Send to {contact.email}</button>
-//     </section>
-//   );
-// }
+export interface ChatProps {
+  contact: ContactType,
+  message: string,
+  dispatch: Function
+}
+
+export default function Chat({contact, message, dispatch}: ChatProps) {
+  return (
+    <section className="chat">
+      <textarea
+        value={message}
+        placeholder={'Chat to ' + contact.name}
+        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
+          // TODO: dispatch edited_message
+          dispatch({
+            type: 'edited_message',
+            message: e.target.value
+          })
+        }}
+      />
+      <br />
+      <button>Send to {contact.email}</button>
+    </section>
+  );
+}

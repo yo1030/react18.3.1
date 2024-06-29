@@ -29,6 +29,9 @@ import { SwitchInput } from "./SwitchInput";
 import ContactManager from "./ContactManager";
 import { Gallery1 } from "./Gallery1";
 import { ContactList1 } from "./ContactList1";
+import { Messenger } from "./Messenger";
+import { Messenger2 } from "./Messenger2";
+import Messenger3 from "./Messenger3";
 
 export const Sample = () => {
   let i = 0;
@@ -81,6 +84,9 @@ export const Sample = () => {
         <ContactManager></ContactManager>
         <Gallery1></Gallery1>
         <ContactList1></ContactList1>
+        <Messenger></Messenger>
+        <Messenger2></Messenger2>
+        <Messenger3></Messenger3>
       </Masonry>
     </>
   )
