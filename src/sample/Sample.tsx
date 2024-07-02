@@ -35,6 +35,7 @@ import Messenger3 from "./Messenger3";
 import Messenger4 from "./Messenger4";
 import { UserImage } from "./UserImage";
 import TaskAppReducer from "./TaskAppReducer";
+import Chat from "../escapeHatch/Chat";
 
 export const Sample = () => {
   let i = 0;
@@ -93,6 +94,7 @@ export const Sample = () => {
         <Messenger4></Messenger4>
         <UserImage></UserImage>
         <TaskAppReducer></TaskAppReducer>
+        <Chat></Chat>
       </Masonry>
     </>
   )
