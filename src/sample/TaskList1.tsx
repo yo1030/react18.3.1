@@ -1,26 +1,17 @@
 import { useState } from 'react';
-import { TaskType } from './TaskAppReducer';
+import { TaskType, useTasks, useTasksDispatch } from './TaskContext';
 
-type TaskListProps = {
-  tasks: TaskType[],
-  onChangeTask: (task: TaskType) => void,
-  onDeleteTask: (id: number) => void
-}
-
-export default function TaskList({
-  tasks,
-  onChangeTask,
-  onDeleteTask
-}: TaskListProps) {
+export default function TaskList() {
+  const tasks = useTasks()
+  const dispatch = useTasksDispatch()
+  if (tasks === null || dispatch === null) {
+    return
+  }
   return (
     <ul>
       {tasks.map(task => (
         <li key={task.id}>
-          <Task
-            task={task}
-            onChange={onChangeTask}
-            onDelete={onDeleteTask}
-          />
+          <Task task={task} />
         </li>
       ))}
     </ul>
@@ -28,24 +19,29 @@ export default function TaskList({
 }
 
 type TaskProps = {
-  task: TaskType,
-  onChange: (task: TaskType) => void,
-  onDelete: (id: number) => void
+  task: TaskType
 }
 
-function Task({ task, onChange, onDelete }: TaskProps) {
+function Task({ task }: TaskProps) {
   const [isEditing, setIsEditing] = useState(false);
+  const dispatch = useTasksDispatch()
+  if (dispatch === null) {
+    return
+  }
   let taskContent;
   if (isEditing) {
     taskContent = (
       <>
         <input
           value={task.text}
-          onChange={e => {
-            onChange({
-              ...task,
-              text: e.target.value
-            });
+          onChange = {e => {
+            dispatch({
+              type: 'changed',
+              task: {
+                ...task,
+                text: e.target.value
+              }
+            })
           }} />
         <button onClick={() => setIsEditing(false)}>
           Save
@@ -68,14 +64,22 @@ function Task({ task, onChange, onDelete }: TaskProps) {
         type="checkbox"
         checked={task.done}
         onChange={e => {
-          onChange({
-            ...task,
-            done: e.target.checked
-          });
+          dispatch({
+            type: 'changed',
+            task: {
+              ...task,
+              text: e.target.value
+            }
+          })
         }}
       />
       {taskContent}
-      <button onClick={() => onDelete(task.id)}>
+      <button onClick={() => {
+        dispatch({
+          type: 'deleted',
+          id: task.id
+        })
+      }}>
         Delete
       </button>
     </label>
