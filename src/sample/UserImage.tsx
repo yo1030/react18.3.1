@@ -1,62 +1,81 @@
-// import { useState } from 'react';
-// import { places } from './imageData.js';
-// import { getImageUrl } from './utils.js';
+import React, { useContext, useState } from 'react';
+import { places } from './imageData';
+import { getImageUrl } from './utils';
+import { ImageContext } from './Context';
 
-// export default function App() {
-//   const [isLarge, setIsLarge] = useState(false);
-//   const imageSize = isLarge ? 150 : 100;
-//   return (
-//     <>
-//       <label>
-//         <input
-//           type="checkbox"
-//           checked={isLarge}
-//           onChange={e => {
-//             setIsLarge(e.target.checked);
-//           }}
-//         />
-//         Use large images
-//       </label>
-//       <hr />
-//       <List imageSize={imageSize} />
-//     </>
-//   )
-// }
+export const UserImage: React.FC = () => {
+  const [isLarge, setIsLarge] = useState(false);
+  const imageSize = isLarge ? 150 : 100;
+  return (
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          checked={isLarge}
+          onChange={e => {
+            setIsLarge(e.target.checked);
+          }}
+        />
+        Use large images
+      </label>
+      <hr />
+      <ImageContext.Provider value={imageSize}>
+        <List />
+      </ImageContext.Provider>
+    </div>
+  )
+}
 
-// function List({ imageSize }) {
-//   const listItems = places.map(place =>
-//     <li key={place.id}>
-//       <Place
-//         place={place}
-//         imageSize={imageSize}
-//       />
-//     </li>
-//   );
-//   return <ul>{listItems}</ul>;
-// }
+function List() {
+  const listItems = places.map(place =>
+    <li key={place.id}
+      style={{
+        display: "grid",
+        gridTemplateColumns: "auto 1fr",
+        gap: "20px",
+        marginBottom: "10px"}}>
+      <Place
+        place={place}
+      />
+    </li>
+  );
+  const ulStyle = {
+    listStyleType: "none",
+    padding: "0px 10px"
+  };
+  return (<ul style={ ulStyle }>{listItems}</ul>);
+}
 
-// function Place({ place, imageSize }) {
-//   return (
-//     <>
-//       <PlaceImage
-//         place={place}
-//         imageSize={imageSize}
-//       />
-//       <p>
-//         <b>{place.name}</b>
-//         {': ' + place.description}
-//       </p>
-//     </>
-//   );
-// }
+type PlaceType = {
+  place: {
+    name: string,
+    description: string,
+    imageId: string
+  }
+}
 
-// function PlaceImage({ place, imageSize }) {
-//   return (
-//     <img
-//       src={getImageUrl(place)}
-//       alt={place.name}
-//       width={imageSize}
-//       height={imageSize}
-//     />
-//   );
-// }
+function Place({ place }: PlaceType) {
+  return (
+    <>
+      <PlaceImage
+        place={place}
+      />
+      <p>
+        <b>{place.name}</b>
+        {': ' + place.description}
+      </p>
+    </>
+  );
+}
+
+function PlaceImage({ place }: PlaceType) {
+  const imageSize = useContext(ImageContext)
+  return (
+    <img
+      src={getImageUrl(place)}
+      alt={place.name}
+      width={imageSize}
+      height={imageSize}
+    />
+  );
+}

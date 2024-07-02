@@ -33,6 +33,7 @@ import { Messenger } from "./Messenger";
 import { Messenger2 } from "./Messenger2";
 import Messenger3 from "./Messenger3";
 import Messenger4 from "./Messenger4";
+import { UserImage } from "./UserImage";
 
 export const Sample = () => {
   let i = 0;
@@ -89,6 +90,7 @@ export const Sample = () => {
         <Messenger2></Messenger2>
         <Messenger3></Messenger3>
         <Messenger4></Messenger4>
+        <UserImage></UserImage>
       </Masonry>
     </>
   )
