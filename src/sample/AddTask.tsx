@@ -6,7 +6,9 @@ export default function AddTask() {
   const tasks = useTasks()
   const dispatch = useTasksDispatch()
   if (tasks === null || dispatch === null) {
-    return
+    return (
+      <div>initial error</div>
+    )
   }
   return (
     <>
