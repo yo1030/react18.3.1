@@ -5,7 +5,9 @@ export default function TaskList() {
   const tasks = useTasks()
   const dispatch = useTasksDispatch()
   if (tasks === null || dispatch === null) {
-    return
+    return (
+      <div>initial error</div>
+    )
   }
   return (
     <ul>
@@ -26,7 +28,9 @@ function Task({ task }: TaskProps) {
   const [isEditing, setIsEditing] = useState(false);
   const dispatch = useTasksDispatch()
   if (dispatch === null) {
-    return
+    return (
+      <div>initial error</div>
+    )
   }
   let taskContent;
   if (isEditing) {
