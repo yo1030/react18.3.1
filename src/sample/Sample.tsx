@@ -37,6 +37,7 @@ import { UserImage } from "./UserImage";
 import TaskAppReducer from "./TaskAppReducer";
 import Chat from "../escapeHatch/Chat";
 import OnOffToggle from "../escapeHatch/OnOffToggle";
+import Dashboard from "../escapeHatch/DebouncedButton";
 
 export const Sample = () => {
   let i = 0;
@@ -97,6 +98,7 @@ export const Sample = () => {
         <TaskAppReducer></TaskAppReducer>
         <Chat></Chat>
         <OnOffToggle></OnOffToggle>
+        <Dashboard></Dashboard>
       </Masonry>
     </>
   )

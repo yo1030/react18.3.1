@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 export default function Chat() {
   const [text, setText] = useState<string>('');
   const [isSending, setIsSending] = useState<boolean>(false);
-  const timeoutRef= useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   function handleSend() {
     setIsSending(true);
