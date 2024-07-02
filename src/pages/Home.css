@@ -24,3 +24,12 @@
   background-color: transparent;
   height: 300px;
 }
+
+.highlighted, .selected {
+  background: #d2eaff;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+}

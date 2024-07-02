@@ -1,0 +1,22 @@
+.background--active {
+  background: rgb( 30, 150, 180, 0.2);
+}
+
+.background {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 5px solid transparent;
+}
+
+.picture--active {
+  border: 5px solid rgb( 30, 150, 180);
+}

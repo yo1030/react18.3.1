@@ -15,6 +15,25 @@ import { ShoppingCartAdd } from "./ShoppingCartAdd";
 import { ShoppingCartDelete } from "./ShoppingCartDelete";
 import { TaskApp } from "./TaskApp";
 import { TaskAppImmer } from "./TaskAppImmer";
+import { Picture } from "./Picture";
+import { EditProfile } from "./EditProfile";
+import { EditProfile1 } from "./EditProfile1";
+import { Clock } from "./Clock";
+import { TravelPlan } from "./TravelPlan";
+import MailClient from "./MailClient1";
+import MailClient2 from "./MailClient2";
+import { SyncedInputs } from "./SyncedInputs";
+import { FilterableList } from "./FilterableList";
+import { InputText } from "./InputText";
+import { SwitchInput } from "./SwitchInput";
+import ContactManager from "./ContactManager";
+import { Gallery1 } from "./Gallery1";
+import { ContactList1 } from "./ContactList1";
+import { Messenger } from "./Messenger";
+import { Messenger2 } from "./Messenger2";
+import Messenger3 from "./Messenger3";
+import Messenger4 from "./Messenger4";
+import { UserImage } from "./UserImage";
 
 export const Sample = () => {
   let i = 0;
@@ -53,6 +72,25 @@ export const Sample = () => {
         <ShoppingCartDelete></ShoppingCartDelete>
         <TaskApp></TaskApp>
         <TaskAppImmer></TaskAppImmer>
+        <Picture></Picture>
+        <EditProfile></EditProfile>
+        <EditProfile1></EditProfile1>
+        <Clock color="rgb(60, 180, 150)" time={new Date()}></Clock>
+        <TravelPlan></TravelPlan>
+        <MailClient></MailClient>
+        <MailClient2></MailClient2>
+        <SyncedInputs></SyncedInputs>
+        <FilterableList></FilterableList>
+        <InputText></InputText>
+        <SwitchInput></SwitchInput>
+        <ContactManager></ContactManager>
+        <Gallery1></Gallery1>
+        <ContactList1></ContactList1>
+        <Messenger></Messenger>
+        <Messenger2></Messenger2>
+        <Messenger3></Messenger3>
+        <Messenger4></Messenger4>
+        <UserImage></UserImage>
       </Masonry>
     </>
   )
