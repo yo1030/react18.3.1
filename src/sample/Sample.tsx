@@ -39,6 +39,7 @@ import Chat from "../escapeHatch/Chat";
 import OnOffToggle from "../escapeHatch/OnOffToggle";
 import Dashboard from "../escapeHatch/DebouncedButton";
 import Chat1 from "../escapeHatch/Chat1";
+import CatFriends from "../escapeHatch/CatFriends";
 
 export const Sample = () => {
   let i = 0;
@@ -101,6 +102,7 @@ export const Sample = () => {
         <OnOffToggle></OnOffToggle>
         <Dashboard></Dashboard>
         <Chat1></Chat1>
+        <CatFriends></CatFriends>
       </Masonry>
     </>
   )
