@@ -42,6 +42,7 @@ import Chat1 from "../escapeHatch/Chat1";
 import CatFriends from "../escapeHatch/CatFriends";
 import CustomRefInput from "../escapeHatch/CustomRefInput";
 import TodoListFocus from "../escapeHatch/TodoListFocus";
+import VideoPlayer from "../escapeHatch/VideoPlayer";
 
 export const Sample = () => {
   let i = 0;
@@ -107,6 +108,7 @@ export const Sample = () => {
         <CatFriends></CatFriends>
         <CustomRefInput></CustomRefInput>
         <TodoListFocus></TodoListFocus>
+        <VideoPlayer></VideoPlayer>
       </Masonry>
     </>
   )

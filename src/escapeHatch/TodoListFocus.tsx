@@ -28,7 +28,7 @@ export default function TodoListFocus() {
   }
 
   return (
-    <>
+    <div>
       <button onClick={handleAdd}>
         Add
       </button>
@@ -41,7 +41,7 @@ export default function TodoListFocus() {
           <li key={todo.id}>{todo.text}</li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 
