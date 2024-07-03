@@ -38,6 +38,7 @@ import TaskAppReducer from "./TaskAppReducer";
 import Chat from "../escapeHatch/Chat";
 import OnOffToggle from "../escapeHatch/OnOffToggle";
 import Dashboard from "../escapeHatch/DebouncedButton";
+import Chat1 from "../escapeHatch/Chat1";
 
 export const Sample = () => {
   let i = 0;
@@ -99,6 +100,7 @@ export const Sample = () => {
         <Chat></Chat>
         <OnOffToggle></OnOffToggle>
         <Dashboard></Dashboard>
+        <Chat1></Chat1>
       </Masonry>
     </>
   )
