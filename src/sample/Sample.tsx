@@ -41,6 +41,7 @@ import Dashboard from "../escapeHatch/DebouncedButton";
 import Chat1 from "../escapeHatch/Chat1";
 import CatFriends from "../escapeHatch/CatFriends";
 import CustomRefInput from "../escapeHatch/CustomRefInput";
+import TodoListFocus from "../escapeHatch/TodoListFocus";
 
 export const Sample = () => {
   let i = 0;
@@ -105,6 +106,7 @@ export const Sample = () => {
         <Chat1></Chat1>
         <CatFriends></CatFriends>
         <CustomRefInput></CustomRefInput>
+        <TodoListFocus></TodoListFocus>
       </Masonry>
     </>
   )
