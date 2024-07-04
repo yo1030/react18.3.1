@@ -2,6 +2,7 @@ import { ChangeEvent, forwardRef, useEffect, useImperativeHandle, useRef } from 
 
 type MyInputType = {
   value: string,
+  shouldFocus: boolean,
   onChange: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
@@ -12,10 +13,10 @@ interface MyInputHandler {
 export const MyInput = forwardRef<MyInputHandler, MyInputType>((props, ref) => {
   const realInputRef = useRef<HTMLInputElement>(null)
   useEffect(() => {
-    if (realInputRef.current) {
+    if (props.shouldFocus && realInputRef.current) {
       realInputRef.current.focus()
     }
-  }, []);
+  }, [props.shouldFocus]);
 
   useImperativeHandle(ref, () => ({
     focus() {
