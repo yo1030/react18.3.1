@@ -48,6 +48,7 @@ import CatFriendsScroll from "../escapeHatch/CatFriendsScroll";
 import FocusTextBox from "../escapeHatch/FocusTextBox";
 import { ShowForm } from "../escapeHatch/ShowForm";
 import Counter from "../escapeHatch/Counter";
+import BioPage from "../escapeHatch/BioPage";
 
 export const Sample = () => {
   let i = 0;
@@ -119,6 +120,7 @@ export const Sample = () => {
         <FocusTextBox></FocusTextBox>
         <ShowForm></ShowForm>
         <Counter></Counter>
+        <BioPage></BioPage>
       </Masonry>
     </>
   )
