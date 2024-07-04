@@ -45,6 +45,7 @@ import TodoListFocus from "../escapeHatch/TodoListFocus";
 import VideoPlayer from "../escapeHatch/VideoPlayer";
 import SearchPage from "../escapeHatch/SearchPage";
 import CatFriendsScroll from "../escapeHatch/CatFriendsScroll";
+import FocusTextBox from "../escapeHatch/FocusTextBox";
 
 export const Sample = () => {
   let i = 0;
@@ -113,6 +114,7 @@ export const Sample = () => {
         <VideoPlayer></VideoPlayer>
         <SearchPage></SearchPage>
         <CatFriendsScroll></CatFriendsScroll>
+        <FocusTextBox></FocusTextBox>
       </Masonry>
     </>
   )
