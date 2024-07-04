@@ -35,10 +35,19 @@ export default function CatFriends() {
         <button onClick={() => scrollToCat(catList[5])}>Maru</button>
         <button onClick={() => scrollToCat(catList[9])}>Jellylorum</button>
       </nav>
-      <div>
-        <ul>
+      <div style={{
+        width: "100%",
+        overflow: "hidden"
+      }}>
+        <ul style={{
+          listStyle: "none",
+          whiteSpace: "nowrap"
+        }}>
           {catList.map((cat) => (
             <li
+              style={{
+                display: "inline"
+              }}
               key={cat}
               ref={(node) => {
                 // なぜか３回行われる（set⇒delete⇒set）

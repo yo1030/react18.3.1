@@ -44,6 +44,7 @@ import CustomRefInput from "../escapeHatch/CustomRefInput";
 import TodoListFocus from "../escapeHatch/TodoListFocus";
 import VideoPlayer from "../escapeHatch/VideoPlayer";
 import SearchPage from "../escapeHatch/SearchPage";
+import CatFriendsScroll from "../escapeHatch/CatFriendsScroll";
 
 export const Sample = () => {
   let i = 0;
@@ -111,6 +112,7 @@ export const Sample = () => {
         <TodoListFocus></TodoListFocus>
         <VideoPlayer></VideoPlayer>
         <SearchPage></SearchPage>
+        <CatFriendsScroll></CatFriendsScroll>
       </Masonry>
     </>
   )
