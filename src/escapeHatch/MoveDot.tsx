@@ -1,13 +1,18 @@
 import { useState, useEffect } from 'react';
 
+type PositionType = {
+  x: number,
+  y: number
+}
+
 export default function MoveDot() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState<PositionType>({ x: 0, y: 0 });
   const [canMove, setCanMove] = useState(true);
 
   useEffect(() => {
     function handleMove(e: PointerEvent) {
       if (canMove) {
-        setPosition({ x: e.clientX, y: e.clientY });
+        setPosition({ x: e.pageX, y: e.pageY });
       }
     }
     window.addEventListener('pointermove', handleMove);
