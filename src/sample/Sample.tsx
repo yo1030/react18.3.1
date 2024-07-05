@@ -54,6 +54,7 @@ import TodoListCacheResult from "../escapeHatch/TodoListCacheResult";
 import ContactManagerNoEffect from "../escapeHatch/ContactManagerNoEffect";
 import FormNoEffect from "../escapeHatch/FormNoEffect";
 import ChatApp from "../escapeHatch/ChatApp";
+import MoveDot from "../escapeHatch/MoveDot";
 
 export const Sample = () => {
   let i = 0;
@@ -131,6 +132,7 @@ export const Sample = () => {
         <ContactManagerNoEffect></ContactManagerNoEffect>
         <FormNoEffect></FormNoEffect>
         <ChatApp></ChatApp>
+        <MoveDot></MoveDot>
       </Masonry>
     </>
   )

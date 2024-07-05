@@ -17,20 +17,20 @@ function ChatRoom({ roomId }: ChatRoomType) {
   }, [roomId]);
 
   return (
-    <>
+    <div>
       <h1>Welcome to the {roomId} room!</h1>
       <input
         value={message}
         onChange={e => setMessage(e.target.value)}
       />
-    </>
+    </div>
   );
 }
 
 export default function ChatApp() {
   const [roomId, setRoomId] = useState('general');
   return (
-    <>
+    <div>
       <label>
         Choose the chat room:{' '}
         <select
@@ -44,6 +44,6 @@ export default function ChatApp() {
       </label>
       <hr />
       <ChatRoom roomId={roomId} />
-    </>
+    </div>
   );
 }
