@@ -56,6 +56,7 @@ import FormNoEffect from "../escapeHatch/FormNoEffect";
 import ChatApp from "../escapeHatch/ChatApp";
 import MoveDot from "../escapeHatch/MoveDot";
 import MoveDot2 from "../escapeHatch/MoveDot2";
+import ChatApp1 from "../escapeHatch/ChatApp1";
 
 export const Sample = () => {
   let i = 0;
@@ -135,6 +136,7 @@ export const Sample = () => {
         <ChatApp></ChatApp>
         <MoveDot></MoveDot>
         <MoveDot2></MoveDot2>
+        <ChatApp1></ChatApp1>
       </Masonry>
     </>
   )
