@@ -52,6 +52,7 @@ import BioPage from "../escapeHatch/BioPage";
 import TodoListNoEffect from "../escapeHatch/TodoListNoEffect";
 import TodoListCacheResult from "../escapeHatch/TodoListCacheResult";
 import ContactManagerNoEffect from "../escapeHatch/ContactManagerNoEffect";
+import FormNoEffect from "../escapeHatch/FormNoEffect";
 
 export const Sample = () => {
   let i = 0;
@@ -127,6 +128,7 @@ export const Sample = () => {
         <TodoListNoEffect></TodoListNoEffect>
         <TodoListCacheResult></TodoListCacheResult>
         <ContactManagerNoEffect></ContactManagerNoEffect>
+        <FormNoEffect></FormNoEffect>
       </Masonry>
     </>
   )
