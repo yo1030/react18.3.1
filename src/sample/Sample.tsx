@@ -49,6 +49,7 @@ import FocusTextBox from "../escapeHatch/FocusTextBox";
 import { ShowForm } from "../escapeHatch/ShowForm";
 import Counter from "../escapeHatch/Counter";
 import BioPage from "../escapeHatch/BioPage";
+import TodoListNoEffect from "../escapeHatch/TodoListNoEffect";
 
 export const Sample = () => {
   let i = 0;
@@ -121,6 +122,7 @@ export const Sample = () => {
         <ShowForm></ShowForm>
         <Counter></Counter>
         <BioPage></BioPage>
+        <TodoListNoEffect></TodoListNoEffect>
       </Masonry>
     </>
   )
