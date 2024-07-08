@@ -57,6 +57,7 @@ import ChatApp from "../escapeHatch/ChatApp";
 import MoveDot from "../escapeHatch/MoveDot";
 import MoveDot2 from "../escapeHatch/MoveDot2";
 import ChatApp1 from "../escapeHatch/ChatApp1";
+import PlanetPage from "../escapeHatch/PlanetPage";
 
 export const Sample = () => {
   let i = 0;
@@ -137,6 +138,7 @@ export const Sample = () => {
         <MoveDot></MoveDot>
         <MoveDot2></MoveDot2>
         <ChatApp1></ChatApp1>
+        <PlanetPage></PlanetPage>
       </Masonry>
     </>
   )
