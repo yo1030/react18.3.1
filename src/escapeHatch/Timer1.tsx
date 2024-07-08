@@ -1,13 +1,18 @@
-import { useState, useEffect } from 'react';
-import { experimental_useEffectEvent as useEffectEvent } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+// import { experimental_useEffectEvent as useEffectEvent } from 'react';
 
 export default function Timer1() {
   const [count, setCount] = useState(0);
   const [increment, setIncrement] = useState(1);
 
-  const onTick = useEffectEvent(() => {
+  // const onTick = useEffectEvent(() => {
+  //   setCount(c => c + increment);
+  // })
+
+  // useCallback を使ってもフリーズ
+  const onTick = useCallback(() => {
     setCount(c => c + increment);
-  })
+  }, [])
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -19,7 +24,7 @@ export default function Timer1() {
   }, []);
 
   return (
-    <>
+    <div>
       <h1>
         Counter: {count}
         <button onClick={() => setCount(0)}>Reset</button>
@@ -35,6 +40,6 @@ export default function Timer1() {
           setIncrement(i => i + 1);
         }}>+</button>
       </p>
-    </>
+    </div>
   );
 }
