@@ -61,6 +61,7 @@ import PlanetPage from "../escapeHatch/PlanetPage";
 import Timer from "../escapeHatch/Timer";
 import Timer1 from "../escapeHatch/Timer1";
 import Timer2 from "../escapeHatch/Timer2";
+import ChatApp2 from "../escapeHatch/ChatApp2";
 
 export const Sample = () => {
   let i = 0;
@@ -145,6 +146,7 @@ export const Sample = () => {
         <Timer></Timer>
         <Timer1></Timer1>
         <Timer2></Timer2>
+        <ChatApp2></ChatApp2>
       </Masonry>
     </>
   )
