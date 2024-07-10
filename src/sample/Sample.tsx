@@ -67,6 +67,7 @@ import WelcomeMessage from "./WelcomeMessage";
 import ChatApp3 from "../escapeHatch/ChatApp3";
 import ChatApp4 from "../escapeHatch/ChatApp4";
 import CustomCounter from "../escapeHatch/CustomCounter";
+import CustomCounterDelay from "../escapeHatch/CustomCounterDelay";
 
 export const Sample = () => {
   let i = 0;
@@ -157,6 +158,7 @@ export const Sample = () => {
         <ChatApp3></ChatApp3>
         <ChatApp4></ChatApp4>
         <CustomCounter></CustomCounter>
+        <CustomCounterDelay></CustomCounterDelay>
       </Masonry>
     </>
   )
