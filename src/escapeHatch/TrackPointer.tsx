@@ -53,6 +53,7 @@ function Dot({ position, opacity }: DotType) {
       top: -20,
       width: 40,
       height: 40,
+      minHeight: 0
       // border: '1px solid red', // Temporary border for debugging
     }} />
   );
