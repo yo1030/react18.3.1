@@ -69,6 +69,7 @@ import ChatApp4 from "../escapeHatch/ChatApp4";
 import CustomCounter from "../escapeHatch/CustomCounter";
 import CustomCounterDelay from "../escapeHatch/CustomCounterDelay";
 import CustomCounterInterval from "../escapeHatch/CustomCounterInterval";
+import CustomCounterIntervalBackground from "../escapeHatch/CustomCounterIntervalBackground";
 
 export const Sample = () => {
   let i = 0;
@@ -161,6 +162,7 @@ export const Sample = () => {
         <CustomCounter></CustomCounter>
         <CustomCounterDelay></CustomCounterDelay>
         <CustomCounterInterval></CustomCounterInterval>
+        <CustomCounterIntervalBackground></CustomCounterIntervalBackground>
       </Masonry>
     </>
   )
