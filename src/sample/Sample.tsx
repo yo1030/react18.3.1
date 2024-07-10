@@ -35,6 +35,42 @@ import Messenger3 from "./Messenger3";
 import Messenger4 from "./Messenger4";
 import { UserImage } from "./UserImage";
 import TaskAppReducer from "./TaskAppReducer";
+import Chat from "../escapeHatch/Chat";
+import OnOffToggle from "../escapeHatch/OnOffToggle";
+import Dashboard from "../escapeHatch/DebouncedButton";
+import Chat1 from "../escapeHatch/Chat1";
+import CatFriends from "../escapeHatch/CatFriends";
+import CustomRefInput from "../escapeHatch/CustomRefInput";
+import TodoListFocus from "../escapeHatch/TodoListFocus";
+import VideoPlayer from "../escapeHatch/VideoPlayer";
+import SearchPage from "../escapeHatch/SearchPage";
+import CatFriendsScroll from "../escapeHatch/CatFriendsScroll";
+import FocusTextBox from "../escapeHatch/FocusTextBox";
+import { ShowForm } from "../escapeHatch/ShowForm";
+import Counter from "../escapeHatch/Counter";
+import BioPage from "../escapeHatch/BioPage";
+import TodoListNoEffect from "../escapeHatch/TodoListNoEffect";
+import TodoListCacheResult from "../escapeHatch/TodoListCacheResult";
+import ContactManagerNoEffect from "../escapeHatch/ContactManagerNoEffect";
+import FormNoEffect from "../escapeHatch/FormNoEffect";
+import ChatApp from "../escapeHatch/ChatApp";
+import MoveDot from "../escapeHatch/MoveDot";
+import MoveDot2 from "../escapeHatch/MoveDot2";
+import ChatApp1 from "../escapeHatch/ChatApp1";
+import PlanetPage from "../escapeHatch/PlanetPage";
+import Timer from "../escapeHatch/Timer";
+import Timer1 from "../escapeHatch/Timer1";
+import Timer2 from "../escapeHatch/Timer2";
+import ChatApp2 from "../escapeHatch/ChatApp2";
+import Timer3 from "./Timer3";
+import WelcomeMessage from "./WelcomeMessage";
+import ChatApp3 from "../escapeHatch/ChatApp3";
+import ChatApp4 from "../escapeHatch/ChatApp4";
+import CustomCounter from "../escapeHatch/CustomCounter";
+import CustomCounterDelay from "../escapeHatch/CustomCounterDelay";
+import CustomCounterInterval from "../escapeHatch/CustomCounterInterval";
+import CustomCounterIntervalBackground from "../escapeHatch/CustomCounterIntervalBackground";
+import TrackPointer from "../escapeHatch/TrackPointer";
 
 export const Sample = () => {
   let i = 0;
@@ -93,6 +129,42 @@ export const Sample = () => {
         <Messenger4></Messenger4>
         <UserImage></UserImage>
         <TaskAppReducer></TaskAppReducer>
+        <Chat></Chat>
+        <OnOffToggle></OnOffToggle>
+        <Dashboard></Dashboard>
+        <Chat1></Chat1>
+        <CatFriends></CatFriends>
+        <CustomRefInput></CustomRefInput>
+        <TodoListFocus></TodoListFocus>
+        <VideoPlayer></VideoPlayer>
+        <SearchPage></SearchPage>
+        <CatFriendsScroll></CatFriendsScroll>
+        <FocusTextBox></FocusTextBox>
+        <ShowForm></ShowForm>
+        <Counter></Counter>
+        <BioPage></BioPage>
+        <TodoListNoEffect></TodoListNoEffect>
+        <TodoListCacheResult></TodoListCacheResult>
+        <ContactManagerNoEffect></ContactManagerNoEffect>
+        <FormNoEffect></FormNoEffect>
+        <ChatApp></ChatApp>
+        <MoveDot></MoveDot>
+        <MoveDot2></MoveDot2>
+        <ChatApp1></ChatApp1>
+        <PlanetPage></PlanetPage>
+        <Timer></Timer>
+        <Timer1></Timer1>
+        <Timer2></Timer2>
+        <ChatApp2></ChatApp2>
+        <Timer3></Timer3>
+        <WelcomeMessage></WelcomeMessage>
+        <ChatApp3></ChatApp3>
+        <ChatApp4></ChatApp4>
+        <CustomCounter></CustomCounter>
+        <CustomCounterDelay></CustomCounterDelay>
+        <CustomCounterInterval></CustomCounterInterval>
+        <CustomCounterIntervalBackground></CustomCounterIntervalBackground>
+        <TrackPointer></TrackPointer>
       </Masonry>
     </>
   )
