@@ -70,6 +70,7 @@ import CustomCounter from "../escapeHatch/CustomCounter";
 import CustomCounterDelay from "../escapeHatch/CustomCounterDelay";
 import CustomCounterInterval from "../escapeHatch/CustomCounterInterval";
 import CustomCounterIntervalBackground from "../escapeHatch/CustomCounterIntervalBackground";
+import TrackPointer from "../escapeHatch/TrackPointer";
 
 export const Sample = () => {
   let i = 0;
@@ -163,6 +164,7 @@ export const Sample = () => {
         <CustomCounterDelay></CustomCounterDelay>
         <CustomCounterInterval></CustomCounterInterval>
         <CustomCounterIntervalBackground></CustomCounterIntervalBackground>
+        <TrackPointer></TrackPointer>
       </Masonry>
     </>
   )
